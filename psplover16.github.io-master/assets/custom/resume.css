@@ -1,0 +1,15 @@
+@keyframes shining{
+  from{
+      color:white;
+  }
+  to{
+      color:transparent;
+  }
+}
+.shine_text{
+  color:white;
+  animation-name:shining;
+  animation-duration:0.75s;
+  animation-iteration-count:1;
+  /* animation-timing-function:none; */
+}

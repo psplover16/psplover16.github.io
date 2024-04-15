@@ -1,15 +1,126 @@
-@keyframes shining{
-  from{
-      color:white;
+@keyframes shining {
+  from {
+    color: white;
   }
-  to{
-      color:transparent;
+  to {
+    color: transparent;
   }
 }
-.shine_text{
-  color:white;
-  animation-name:shining;
-  animation-duration:0.75s;
-  animation-iteration-count:1;
+.shine_text {
+  color: white;
+  animation-name: shining;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
   /* animation-timing-function:none; */
+}
+
+.green_dividerFont {
+  font-family: Microsoft JhengHei;
+  font-size: 48px;
+  color: #4ba03d;
+}
+.green_divider {
+  width: 100%;
+  height: 2px;
+  background: #4ba03d;
+  text-align: left;
+}
+/* 以下是作品集卡片旋轉的部分 */
+.cardEff {
+  width: 100%;
+  /* background-color: yellow; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardEff_container {
+  width: 200px;
+  height: 300px;
+  /* border: 1px solid black; */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
+  margin: 10px;
+
+  display: inline-block;
+  transform: rotateY(0deg);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  /* transform: rotateY(180deg); */
+  /*  */
+  /* transition: filter 0.2s; */
+  /* filter:drop-shadow(0px 0px 10px white); */
+  /* perspective:800px; */
+}
+.rotateY{
+  transform: rotateY(180deg);
+}
+/* .cardEff_container:hover {
+  transform: rotateY(180deg);
+} */
+.contentA {
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px;
+  background: red;
+  position: relative;
+  z-index: 2;
+  /* 控制背圖是否可見 */
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.contentB {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.cardEff_btn{
+  padding: 5px 10px;
+}
+@media (min-width: 375px) {
+  .cardEff_container {
+    width: 150px;
+    height: 225px;
+    /* margin: 5px 10px; */
+  }
+}
+
+@media (min-width: 768px) {
+  .cardEff_container {
+    width: 200px;
+    height: 300px;
+    /* margin:5px 10px; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardEff_container {
+    width: 290px;
+    height: 240px;
+    /* margin:5px 10px; */
+  }
+}
+@media (min-width: 1280px) {
+  .cardEff_container {
+    width: 350px;
+    height: 240px;
+    /* margin:5px 10px; */
+  }
 }

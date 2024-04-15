@@ -47,14 +47,22 @@ function myname() {
       $(".myname").next().text("");
       // setTimeout(myname, 1500);
       break;
-      // case 8:
-      //   $(".myname").text("");
-      //   myname_count = 0;
-      //   setTimeout(myname, 300);
-      //   break;
+    // case 8:
+    //   $(".myname").text("");
+    //   myname_count = 0;
+    //   setTimeout(myname, 300);
+    //   break;
   }
 }
 
 setTimeout(myname, 300);
 
 // $(".myname").text("123");
+
+function rotates(event) {
+  // console.log(event.target.classList);
+  event.target.parentNode.parentNode.classList.add("rotateY")
+}
+function returnRotate(event) {
+  event.target.parentNode.parentNode.classList.remove("rotateY")
+}

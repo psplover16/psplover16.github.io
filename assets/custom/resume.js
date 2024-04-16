@@ -68,9 +68,9 @@ function returnRotate(event) {
 }
 
 var cardList=[
-  {title:"水墨特效1",content:"滑鼠滑動時，產生墨水紋路",url:"https://psplover16.github.io/canvasEffect_Ink1"},
-  {title:"水墨特效2",content:"油脂在水面的效果",url:"https://psplover16.github.io/canvasEffect_Ink2/"},
-  {title:"水墨特效3",content:"煙霧炫彩功能",url:"https://psplover16.github.io/canvasEffect_Ink3/"},
+  // {title:"水墨特效1",content:"滑鼠滑動時，產生墨水紋路",url:"https://psplover16.github.io/canvasEffect_Ink1"},
+  {title:"油脂特效",content:"油脂在水面的效果",url:"https://psplover16.github.io/canvasEffect_Ink2/"},
+  {title:"煙霧炫彩特效",content:"煙霧炫彩功能",url:"https://psplover16.github.io/canvasEffect_Ink3/"},
   {title:"水波特效1",content:"利用Jq完成水波特效",url:"https://psplover16.github.io/canvasEffect_waterWave1/"},
   {title:"白色粒子特效1",content:"利用純canvas完成噴射粒子的功能",url:"https://psplover16.github.io/whiteParticle1/"},
   {title:"擦鞋特效",content:"clipPath 練習與實踐",url:"https://psplover16.github.io/cleanShoes/"},
